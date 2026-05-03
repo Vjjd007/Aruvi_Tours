@@ -1,0 +1,214 @@
+/* Shared ARUVI TOURS fixed navbar for package pages */
+body {
+  padding-top: 72px;
+}
+
+.aruvi-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+  background: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+}
+
+.aruvi-nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.aruvi-logo {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.aruvi-logo span {
+  color: #c9a84c;
+}
+
+.aruvi-nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.aruvi-nav-links > li > a,
+.aruvi-dd summary {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.aruvi-nav-links > li > a:hover,
+.aruvi-dd summary:hover {
+  color: #c9a84c;
+  background: rgba(201, 168, 76, 0.12);
+}
+
+.aruvi-book {
+  background: linear-gradient(135deg, #c9a84c, #e8d08a);
+  color: #111 !important;
+  font-weight: 700;
+}
+
+.aruvi-dd {
+  position: relative;
+}
+
+.aruvi-dd details > summary {
+  display: inline-block;
+}
+
+.aruvi-dd details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.aruvi-dd-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 560px;
+  background: rgba(15, 15, 15, 0.97);
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  overflow: hidden;
+}
+
+.aruvi-dd details[open] .aruvi-dd-panel,
+.aruvi-dd details:hover .aruvi-dd-panel {
+  display: grid;
+}
+
+.aruvi-dd-col {
+  padding: 12px;
+}
+
+.aruvi-dd-col + .aruvi-dd-col {
+  border-left: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.aruvi-dd-title {
+  color: #c9a84c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.aruvi-dd-col a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+.aruvi-dd-col a:hover {
+  color: #c9a84c;
+  background: rgba(201, 168, 76, 0.12);
+}
+
+.aruvi-burger {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.aruvi-burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  margin: 5px 0;
+  transition: 0.25s ease;
+}
+
+.aruvi-burger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.aruvi-burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.aruvi-burger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .aruvi-nav-links {
+    display: none;
+  }
+
+  .aruvi-burger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 56px;
+    right: -100%;
+    width: 280px;
+    height: calc(100vh - 56px);
+    background: rgba(10, 10, 10, 0.98);
+    border-left: 1px solid rgba(201, 168, 76, 0.25);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    z-index: 4999;
+  }
+
+  .mobile-menu.open {
+    right: 0;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .mobile-menu a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .mobile-menu a:hover {
+    color: #c9a84c;
+    background: rgba(201, 168, 76, 0.12);
+  }
+}
