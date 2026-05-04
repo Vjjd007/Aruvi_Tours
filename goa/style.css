@@ -261,16 +261,23 @@ ul { list-style: none; }
 
 /* ── HERO ────────────────────────────────── */
 .hero {
-  position: relative; height: 100vh; min-height: 640px;
+  position: relative;
+  height: calc(100svh - 72px);
+  min-height: 640px;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
 }
 .hero-bg {
   position: absolute; inset: 0;
+  overflow: hidden;
 }
 .hero-img {
-  width: 100%; height: 100%;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center center;
   transform: scale(1.08);
   transition: transform 8s ease;
   will-change: transform;
@@ -1051,6 +1058,14 @@ ul { list-style: none; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
   .hero-weather { display: none; }
+  .hero {
+    height: calc(100svh - 72px);
+    min-height: 560px;
+  }
+  .hero-img {
+    transform: scale(1.02);
+    object-position: center 45%;
+  }
   .cursor-dot, .cursor-ring { display: none; }
   body { cursor: auto; }
   .btn-primary, .btn-ghost, .nav-cta, .tc-btn, .lb-close, .lb-arrow, .cs-input { cursor: pointer; }

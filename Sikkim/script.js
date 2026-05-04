@@ -277,3 +277,29 @@ document.addEventListener('DOMContentLoaded', () => {
   if (testimonialNext) testimonialNext.addEventListener('click', () => stepTestimonials(1));
   renderTestimonials();
 });
+
+// Shared mobile menu package group switch (Domestic / International)
+document.addEventListener('DOMContentLoaded', () => {
+  const menuTabs = document.querySelectorAll('.mobile-menu-tab');
+  const domesticGroup = document.getElementById('mobileDomestic');
+  const internationalGroup = document.getElementById('mobileInternational');
+
+  const setMenuGroup = (target) => {
+    const showDomestic = target === 'domestic';
+    if (domesticGroup) domesticGroup.classList.toggle('active', showDomestic);
+    if (internationalGroup) internationalGroup.classList.toggle('active', !showDomestic);
+
+    menuTabs.forEach((tab) => {
+      const selected = tab.dataset.menuTarget === target;
+      tab.classList.toggle('active', selected);
+      tab.setAttribute('aria-selected', String(selected));
+    });
+  };
+
+  if (menuTabs.length && domesticGroup && internationalGroup) {
+    menuTabs.forEach((tab) => {
+      tab.addEventListener('click', () => setMenuGroup(tab.dataset.menuTarget));
+    });
+    setMenuGroup('domestic');
+  }
+});
