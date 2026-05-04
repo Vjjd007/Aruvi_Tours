@@ -1213,12 +1213,20 @@ ul { list-style: none; }
   .fi-2, .fi-4 { display: none; }
 }
 
+@media (max-width: 500px) {
+  .pkg-slide { min-width: 150px; }
+  .carousel-track { gap: 16px; }
+  .carousel-wrapper { padding: 0 12px; gap: 8px; }
+}
+
 @media (max-width: 480px) {
   .hero-btns { flex-direction: column; align-items: center; }
   .footer-top { grid-template-columns: 1fr; }
-  .pkg-slide { min-width: 220px; }
+  .pkg-slide { min-width: 150px; }
   .modal-box { padding: 28px 20px; }
   .why-grid { grid-template-columns: 1fr; }
   .cta-section { padding: 80px 20px; }
   .section-title { font-size: 26px; }
+  .carousel-track { gap: 16px; }
+  .carousel-wrapper { padding: 0 12px; gap: 8px; }
 }
