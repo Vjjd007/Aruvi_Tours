@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us — Aruvi Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="../shared/navbar.css" />
+</head>
+<body>
+     <nav id="nav" class="nav aruvi-navbar">
+    <div class="aruvi-nav-container">
+      <a class="aruvi-logo" href="index.html">ARUVI <span>TOURS</span></a>
+
+      <ul class="aruvi-nav-links" id="navMenu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../About/index.html">About</a></li>
+        <li class="aruvi-dd">
+          <details>
+            <summary>Packages</summary>
+            <div class="aruvi-dd-panel">
+              <div class="aruvi-dd-col">
+                <p class="aruvi-dd-title">Domestic</p>
+                <a href="../kerala/index.html">Kerala</a>
+                <a href="../goa/index.html">Goa</a>
+                <a href="../Andaman/index.html">Andaman</a>
+                <a href="../golden_triangle/index.html">Golden Triangle</a>
+                <a href="../Himachal Pradesh/index.html">Himachal</a>
+                <a href="../Kashmir/index.html">Kashmir</a>
+                <a href="../Rajasthan/index.html">Rajasthan</a>
+                <a href="../Sikkim/index.html">Sikkim</a>
+                <a href="../Assam/index.html">Assam</a>
+                <a href="../Gujarat/index.html">Gujarat</a>
+                <a href="../Ladakh/index.html">Ladakh</a>
+                <a href="../Lakshadweep/index.html">Lakshadweep</a>
+                <a href="../Odisha/index.html">Odisha</a>
+                <a href="../Meghalaya/index.html">Meghalaya</a>
+                <a href="../Arunachal Pradesh/index.html">Arunachal Pradesh</a>
+              </div>
+              <div class="aruvi-dd-col">
+                <p class="aruvi-dd-title">International</p>
+                <a href="../malaysia/index.html">Malaysia</a>
+                <a href="../singapore/index.html">Singapore</a>
+                <a href="../thailand/index.html">Thailand</a>
+                <a href="../srilanka/index.html">Sri Lanka</a>
+                <a href="../bali/index.html">Bali</a>
+                <a href="../Dubai/index.html">Dubai</a>
+                <a href="../Maldives/index.html">Maldives</a>
+                <a href="../nepal/index.html">Nepal</a>
+                <a href="../Bhutan/index.html">Bhutan</a>
+                <a href="../Philippines/index.html">Philippines</a>
+                <a href="../Vietnam/index.html">Vietnam</a>
+                <a href="../Cambodia/index.html">Cambodia</a>
+                <a href="../Japan/index.html">Japan</a>
+                <a href="../china/index.html">China</a>
+                <a href="../Kenya/index.html">Kenya</a>
+                <a href="../Brunei/index.html">Brunei</a>
+                <a href="../HongKong&macau/index.html">Hong Kong & Macau</a>
+                <a href="../Russia/index.html">Russia</a>
+                <a href="../Turkey/index.html">Turkey</a>
+                <a href="../Egypt/index.html">Egypt</a>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li><a href="../Contact/index.html">Contact Us</a></li>
+        <li><a class="aruvi-book" href="index.html#booking">Book Now</a></li>
+      </ul>
+
+      <button class="aruvi-burger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-menu-top-links">
+        <li><a href="../index.html" class="mm-link">Home</a></li>
+        <li><a href="../About/index.html" class="mm-link">About</a></li>
+      </ul>
+
+      <div class="mobile-menu-tabs" role="tablist" aria-label="Package type">
+        <button type="button" class="mobile-menu-tab active" data-menu-target="domestic" role="tab" aria-selected="true">Domestic</button>
+        <button type="button" class="mobile-menu-tab" data-menu-target="international" role="tab" aria-selected="false">International</button>
+      </div>
+
+      <ul class="mobile-menu-group active" id="mobileDomestic" role="tabpanel">
+        <li><a href="../kerala/index.html" class="mm-link">Kerala</a></li>
+        <li><a href="../goa/index.html" class="mm-link">Goa</a></li>
+        <li><a href="../Andaman/index.html" class="mm-link">Andaman</a></li>
+        <li><a href="../golden_triangle/index.html" class="mm-link">Golden Triangle</a></li>
+        <li><a href="../Himachal Pradesh/index.html" class="mm-link">Himachal</a></li>
+        <li><a href="../Kashmir/index.html" class="mm-link">Kashmir</a></li>
+        <li><a href="../Rajasthan/index.html" class="mm-link">Rajasthan</a></li>
+        <li><a href="../Sikkim/index.html" class="mm-link">Sikkim</a></li>
+        <li><a href="../Assam/index.html" class="mm-link">Assam</a></li>
+        <li><a href="../Gujarat/index.html" class="mm-link">Gujarat</a></li>
+        <li><a href="../Ladakh/index.html" class="mm-link">Ladakh</a></li>
+        <li><a href="../Lakshadweep/index.html" class="mm-link">Lakshadweep</a></li>
+        <li><a href="../Odisha/index.html" class="mm-link">Odisha</a></li>
+        <li><a href="../Meghalaya/index.html" class="mm-link">Meghalaya</a></li>
+        <li><a href="../Arunachal Pradesh/index.html" class="mm-link">Arunachal Pradesh</a></li>
+      </ul>
+
+      <ul class="mobile-menu-group" id="mobileInternational" role="tabpanel">
+        <li><a href="../malaysia/index.html" class="mm-link">Malaysia</a></li>
+        <li><a href="../singapore/index.html" class="mm-link">Singapore</a></li>
+        <li><a href="../thailand/index.html" class="mm-link">Thailand</a></li>
+        <li><a href="../srilanka/index.html" class="mm-link">Sri Lanka</a></li>
+        <li><a href="../bali/index.html" class="mm-link">Bali</a></li>
+        <li><a href="../Dubai/index.html" class="mm-link">Dubai</a></li>
+        <li><a href="../Maldives/index.html" class="mm-link">Maldives</a></li>
+        <li><a href="../nepal/index.html" class="mm-link">Nepal</a></li>
+        <li><a href="../Bhutan/index.html" class="mm-link">Bhutan</a></li>
+        <li><a href="../Philippines/index.html" class="mm-link">Philippines</a></li>
+        <li><a href="../Vietnam/index.html" class="mm-link">Vietnam</a></li>
+        <li><a href="../Cambodia/index.html" class="mm-link">Cambodia</a></li>
+        <li><a href="../Japan/index.html" class="mm-link">Japan</a></li>
+        <li><a href="../china/index.html" class="mm-link">China</a></li>
+        <li><a href="../Kenya/index.html" class="mm-link">Kenya</a></li>
+        <li><a href="../Brunei/index.html" class="mm-link">Brunei</a></li>
+        <li><a href="../HongKong&macau/index.html" class="mm-link">Hong Kong & Macau</a></li>
+        <li><a href="../Russia/index.html" class="mm-link">Russia</a></li>
+        <li><a href="../Turkey/index.html" class="mm-link">Turkey</a></li>
+        <li><a href="../Egypt/index.html" class="mm-link">Egypt</a></li>
+      </ul>
+
+      <ul class="mobile-menu-bottom-links">
+        <li><a href="../Contact/index.html" class="mm-link">Contact Us</a></li>
+        <li><a href="index.html#booking" class="mm-link">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- ══════════════════════════════════════ HERO ══ -->
+<section class="hero" aria-label="Contact Aruvi Tours">
+  <div class="hero__bg" role="img" aria-label="Scenic travel destination background"></div>
+  <div class="hero__overlay"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span>Aruvi Tours &nbsp;·&nbsp; Salem, India</span>
+      </div>
+      <h1 class="hero__title">
+        Get in <em>Touch</em>
+      </h1>
+      <p class="hero__sub">
+        We're here to help you plan your perfect journey — from the first question to the final destination.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ INFO CARDS ══ -->
+<section class="info-cards" aria-label="Contact information">
+  <div class="container">
+    <div class="info-cards__grid">
+
+      <div class="info-card reveal">
+        <span class="info-card__icon" aria-hidden="true">📍</span>
+        <span class="info-card__label">Our Office</span>
+        <p class="info-card__value">
+          1/272/4, Krishnammal Nagar,<br />
+          Fairlands, Salem,<br />
+          Tamil Nadu – 636016
+        </p>
+      </div>
+
+      <div class="info-card reveal" style="transition-delay:0.1s">
+        <span class="info-card__icon" aria-hidden="true">📞</span>
+        <span class="info-card__label">Call Us</span>
+        <p class="info-card__value">
+          <a href="tel:+919494141475">+91 9494141475</a>
+        </p>
+      </div>
+
+      <div class="info-card reveal" style="transition-delay:0.2s">
+        <span class="info-card__icon" aria-hidden="true">✉️</span>
+        <span class="info-card__label">Email Us</span>
+        <p class="info-card__value">
+          <a href="mailto:aruvitours@gmail.com">aruvitours@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="info-card reveal" style="transition-delay:0.3s">
+        <span class="info-card__icon" aria-hidden="true">🕒</span>
+        <span class="info-card__label">Office Hours</span>
+        <p class="info-card__value">
+          Monday – Saturday<br />
+          10:30 AM – 5:00 PM
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ CONTACT FORM ══ -->
+<section class="contact-form-section" aria-labelledby="form-heading">
+  <div class="container">
+    <div class="form-grid">
+
+      <!-- FORM -->
+      <div class="form-wrap reveal">
+        <p class="label">Enquiry Form</p>
+        <span class="gold-line"></span>
+        <h2 style="font-family:var(--font-serif);font-size:1.5rem;font-weight:300;color:var(--charcoal);margin-bottom:2rem;line-height:1.3">
+          Tell us about your <strong style="font-weight:600">dream trip</strong>
+        </h2>
+
+        <form novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp Number <span class="req">*</span></label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="+91 XXXXX XXXXX" required autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="city">Your City</label>
+              <input type="text" id="city" name="city" placeholder="City you're from" autocomplete="address-level2" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="destination">Interested Travel Destination</label>
+            <select id="destination" name="destination">
+              <option value="" disabled selected>Select a destination</option>
+              <optgroup label="India">
+                <option>Kerala – God's Own Country</option>
+                <option>Rajasthan – Land of Kings</option>
+                <option>Himachal Pradesh – Mountain Escape</option>
+                <option>Goa – Sun, Sand & Sea</option>
+                <option>Andaman Islands</option>
+                <option>Varanasi – Spiritual Journey</option>
+                <option>North East India</option>
+                <option>Kashmir – Paradise Valley</option>
+              </optgroup>
+              <optgroup label="International">
+                <option>Southeast Asia (Thailand, Bali, Vietnam)</option>
+                <option>Europe (France, Switzerland, Italy)</option>
+                <option>Dubai & UAE</option>
+                <option>Sri Lanka</option>
+                <option>Maldives</option>
+                <option>Singapore & Malaysia</option>
+                <option>Other / Custom Destination</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" placeholder="Tell us more about your travel plans, dates, group size, or any special requests…"></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Send Enquiry
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- SIDE PANEL -->
+      <aside class="form-side reveal" style="transition-delay:0.15s">
+        <div class="form-side__intro">
+          <p class="label">Get In Touch</p>
+          <span class="gold-line"></span>
+          <h2>We'd love to <strong>hear from you.</strong></h2>
+          <p>
+            Planning a trip can feel overwhelming — but it doesn't have to be. Our travel consultants are ready to guide you every step of the way. Reach out and let's start crafting your story.
+          </p>
+          <ul class="contact-list" role="list">
+            <li>
+              <div class="contact-list__icon" aria-hidden="true">📞</div>
+              <div class="contact-list__detail">
+                <small>Call us directly</small>
+                <a href="tel:+919494141475"><strong>+91 9494141475</strong></a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-list__icon" aria-hidden="true">✉️</div>
+              <div class="contact-list__detail">
+                <small>Write to us</small>
+                <a href="mailto:aruvitours@gmail.com"><strong>aruvitours@gmail.com</strong></a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-list__icon" aria-hidden="true">💬</div>
+              <div class="contact-list__detail">
+                <small>WhatsApp available</small>
+                <a href="https://wa.me/919494141475" target="_blank" rel="noopener"><strong>Chat with us on WhatsApp</strong></a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-list__icon" aria-hidden="true">🕒</div>
+              <div class="contact-list__detail">
+                <small>Office hours</small>
+                <strong>Mon–Sat, 10:30 AM – 5:00 PM</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-side__img">
+          <img
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+            alt="Scenic mountain landscape — the spirit of travel"
+            loading="lazy"
+          />
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ MAP ══ -->
+<section class="map-section" aria-labelledby="map-heading">
+  <div class="container">
+    <div class="map-inner">
+
+      <div class="reveal">
+        <p class="label">Find Us</p>
+        <span class="gold-line"></span>
+        <h2 class="map-text" id="map-heading" style="font-family:var(--font-serif);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:300;line-height:1.25;color:var(--charcoal);margin-bottom:1rem;">
+          Visit Our Office<br /><strong style="font-weight:600">in Salem</strong>
+        </h2>
+        <p style="font-family:var(--font-serif);font-size:1.05rem;font-style:italic;color:var(--stone);line-height:1.8;margin-bottom:1.4rem;">
+          Our office is centrally located in Salem. Drop in during business hours — our team will be happy to meet you in person and plan your journey face to face.
+        </p>
+        <div class="map-address" role="address">
+          <strong>Aruvi Tours</strong><br />
+          1/272/4, Krishnammal Nagar, Fairlands,<br />
+          Salem, Tamil Nadu – 636016, India
+        </div>
+      </div>
+
+      <div class="map-embed reveal" style="transition-delay:0.2s">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.2!2d78.1485!3d11.6588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDM5JzMxLjciTiA3OMKwMDgnNTQuNiJF!5e0!3m2!1sen!2sin!4v1700000000000"
+          title="Aruvi Tours office location in Salem, Tamil Nadu"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="map-embed__overlay" aria-hidden="true">Fairlands, Salem</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ NEWSLETTER ══ -->
+<section class="newsletter" aria-labelledby="newsletter-heading">
+  <div class="container">
+    <div class="newsletter__inner">
+
+      <div class="reveal">
+        <p class="label newsletter__text">Stay Updated</p>
+        <span class="gold-line" style="background:var(--gold)"></span>
+        <h2 class="newsletter__heading" id="newsletter-heading">
+          Get <strong>Travel Deals</strong><br />& Exclusive Updates
+        </h2>
+        <p class="newsletter__sub">
+          Be the first to know about curated travel packages, seasonal offers, and destination guides — delivered directly to your inbox.
+        </p>
+      </div>
+
+      <div class="reveal" style="transition-delay:0.15s">
+        <div class="newsletter__form">
+          <div class="newsletter__input-row">
+            <input
+              type="email"
+              class="newsletter__input"
+              placeholder="Enter your email address"
+              aria-label="Email address for newsletter"
+            />
+            <button type="button" class="newsletter__btn">Subscribe</button>
+          </div>
+          <p class="newsletter__note">No spam. Unsubscribe anytime. We respect your privacy.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ SOCIAL ══ -->
+<section class="social" aria-labelledby="social-heading">
+  <div class="container">
+    <div class="social__inner">
+      <div class="reveal">
+        <p class="label">Follow Along</p>
+        <span class="gold-line" style="margin-inline:auto"></span>
+        <h2 id="social-heading" style="font-family:var(--font-serif);font-size:clamp(1.7rem,2.8vw,2.2rem);font-weight:300;color:var(--charcoal);margin-bottom:0.5rem;">
+          Join Our <strong style="font-weight:600">Travel Community</strong>
+        </h2>
+        <p style="font-family:var(--font-serif);font-size:1rem;font-style:italic;color:var(--stone);max-width:400px;margin-inline:auto;">
+          Follow us for daily travel inspiration, destination guides, and behind-the-scenes moments from our journeys.
+        </p>
+      </div>
+
+      <div class="social__icons" role="list">
+
+        <a href="https://instagram.com/aruvitours" target="_blank" rel="noopener noreferrer" class="social-link reveal" aria-label="Follow Aruvi Tours on Instagram" role="listitem">
+          <div class="social-icon social-icon--ig">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <span class="social__handle">Instagram</span>
+        </a>
+
+        <a href="https://facebook.com/aruvitours" target="_blank" rel="noopener noreferrer" class="social-link reveal" aria-label="Follow Aruvi Tours on Facebook" role="listitem" style="transition-delay:0.1s">
+          <div class="social-icon social-icon--fb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </div>
+          <span class="social__handle">Facebook</span>
+        </a>
+
+        <a href="https://youtube.com/@aruvitours" target="_blank" rel="noopener noreferrer" class="social-link reveal" aria-label="Subscribe to Aruvi Tours on YouTube" role="listitem" style="transition-delay:0.2s">
+          <div class="social-icon social-icon--yt">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <span class="social__handle">YouTube</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ FINAL CTA ══ -->
+<section class="cta" aria-label="Start planning your trip with Aruvi Tours">
+  <div class="cta__bg" role="img" aria-label="Scenic aerial view of travel destination"></div>
+  <div class="cta__overlay"></div>
+
+  <div class="container">
+    <div class="cta__content reveal">
+      <p class="label cta__label">Your Journey Awaits</p>
+      <h2 class="cta__heading">Let's Plan Your<br />Next Journey</h2>
+      <p class="cta__sub">
+        Whether it's a family vacation, a romantic escape, or a group adventure — Aruvi Tours is ready to bring your travel dream to life.
+      </p>
+      <a href="tel:+919494141475" class="btn-gold" aria-label="Call Aruvi Tours to start planning your trip">
+        Start Your Trip
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ FOOTER BAR ══ -->
+<footer class="footer-bar">
+  <p>© 2025 <span>Aruvi Tours</span> · Salem, Tamil Nadu · GST Registered · MSME Certified · All Rights Reserved</p>
+</footer>
+
+<script>
+  /* Scroll reveal */
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: '0px 0px -36px 0px' }
+  );
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* Form submit (demo) */
+  document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = e.target.querySelector('.btn-submit');
+    btn.textContent = '✓ Enquiry Sent!';
+    btn.style.background = '#2d7d46';
+    btn.style.color = '#fff';
+    btn.style.borderRadius = '100px';
+    setTimeout(() => {
+      btn.innerHTML = 'Send Enquiry <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>';
+      btn.style.background = '';
+      btn.style.color = '';
+    }, 3000);
+  });
+
+  /* Newsletter submit (demo) */
+  document.querySelector('.newsletter__btn').addEventListener('click', (e) => {
+    const btn = e.target;
+    btn.textContent = '✓ Subscribed!';
+    btn.style.background = '#2d7d46';
+    btn.style.color = '#fff';
+    setTimeout(() => {
+      btn.textContent = 'Subscribe';
+      btn.style.background = '';
+      btn.style.color = '';
+    }, 3000);
+  });
+</script>
+</body>
+</html>

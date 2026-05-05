@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us — Aruvi Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="../shared/navbar.css" />
+</head>
+<body>
+ <nav id="nav" class="nav aruvi-navbar">
+    <div class="aruvi-nav-container">
+  <a class="aruvi-logo" href="../index.html">ARUVI <span>TOURS</span></a>
+
+      <ul class="aruvi-nav-links" id="navMenu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li class="aruvi-dd">
+          <details>
+            <summary>Packages</summary>
+            <div class="aruvi-dd-panel">
+              <div class="aruvi-dd-col">
+                <p class="aruvi-dd-title">Domestic</p>
+                <a href="../kerala/index.html">Kerala</a>
+                <a href="../goa/index.html">Goa</a>
+                <a href="../Andaman/index.html">Andaman</a>
+                <a href="../golden_triangle/index.html">Golden Triangle</a>
+                <a href="../Himachal Pradesh/index.html">Himachal</a>
+                <a href="../Kashmir/index.html">Kashmir</a>
+                <a href="../Rajasthan/index.html">Rajasthan</a>
+                <a href="../Sikkim/index.html">Sikkim</a>
+                <a href="../Assam/index.html">Assam</a>
+                <a href="../Gujarat/index.html">Gujarat</a>
+                <a href="../Ladakh/index.html">Ladakh</a>
+                <a href="../Lakshadweep/index.html">Lakshadweep</a>
+                <a href="../Odisha/index.html">Odisha</a>
+                <a href="../Meghalaya/index.html">Meghalaya</a>
+                <a href="../Arunachal%20Pradesh/index.html">Arunachal Pradesh</a>
+              </div>
+              <div class="aruvi-dd-col">
+                <p class="aruvi-dd-title">International</p>
+                <a href="../malaysia/index.html">Malaysia</a>
+                <a href="../singapore/index.html">Singapore</a>
+                <a href="../thailand/index.html">Thailand</a>
+                <a href="../srilanka/index.html">Sri Lanka</a>
+                <a href="../bali/index.html">Bali</a>
+                <a href="../Dubai/index.html">Dubai</a>
+                <a href="../Maldives/index.html">Maldives</a>
+                <a href="../nepal/index.html">Nepal</a>
+                <a href="../Bhutan/index.html">Bhutan</a>
+                <a href="../Philippines/index.html">Philippines</a>
+                <a href="../Vietnam/index.html">Vietnam</a>
+                <a href="../Cambodia/index.html">Cambodia</a>
+                <a href="../Japan/index.html">Japan</a>
+                <a href="../china/index.html">China</a>
+                <a href="../Kenya/index.html">Kenya</a>
+                <a href="../Brunei/index.html">Brunei</a>
+                <a href="../HongKong&macau/index.html">Hong Kong & Macau</a>
+                <a href="../Russia/index.html">Russia</a>
+                <a href="../Turkey/index.html">Turkey</a>
+                <a href="../Egypt/index.html">Egypt</a>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li><a href="../Contact/index.html">Contact Us</a></li>
+        <li><a class="aruvi-book" href="../index.html#booking">Book Now</a></li>
+      </ul>
+
+      <button class="aruvi-burger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-menu-top-links">
+        <li><a href="../index.html" class="mm-link">Home</a></li>
+        <li><a href="index.html" class="mm-link">About</a></li>
+      </ul>
+
+      <div class="mobile-menu-tabs" role="tablist" aria-label="Package type">
+        <button type="button" class="mobile-menu-tab active" data-menu-target="domestic" role="tab" aria-selected="true">Domestic</button>
+        <button type="button" class="mobile-menu-tab" data-menu-target="international" role="tab" aria-selected="false">International</button>
+      </div>
+
+      <ul class="mobile-menu-group active" id="mobileDomestic" role="tabpanel">
+        <li><a href="../kerala/index.html" class="mm-link">Kerala</a></li>
+        <li><a href="../goa/index.html" class="mm-link">Goa</a></li>
+        <li><a href="../Andaman/index.html" class="mm-link">Andaman</a></li>
+        <li><a href="../golden_triangle/index.html" class="mm-link">Golden Triangle</a></li>
+        <li><a href="../Himachal Pradesh/index.html" class="mm-link">Himachal</a></li>
+        <li><a href="../Kashmir/index.html" class="mm-link">Kashmir</a></li>
+        <li><a href="../Rajasthan/index.html" class="mm-link">Rajasthan</a></li>
+        <li><a href="../Sikkim/index.html" class="mm-link">Sikkim</a></li>
+        <li><a href="../Assam/index.html" class="mm-link">Assam</a></li>
+        <li><a href="../Gujarat/index.html" class="mm-link">Gujarat</a></li>
+        <li><a href="../Ladakh/index.html" class="mm-link">Ladakh</a></li>
+        <li><a href="../Lakshadweep/index.html" class="mm-link">Lakshadweep</a></li>
+        <li><a href="../Odisha/index.html" class="mm-link">Odisha</a></li>
+        <li><a href="../Meghalaya/index.html" class="mm-link">Meghalaya</a></li>
+        <li><a href="../Arunachal%20Pradesh/index.html" class="mm-link">Arunachal Pradesh</a></li>
+      </ul>
+
+      <ul class="mobile-menu-group" id="mobileInternational" role="tabpanel">
+        <li><a href="../malaysia/index.html" class="mm-link">Malaysia</a></li>
+        <li><a href="../singapore/index.html" class="mm-link">Singapore</a></li>
+        <li><a href="../thailand/index.html" class="mm-link">Thailand</a></li>
+        <li><a href="../srilanka/index.html" class="mm-link">Sri Lanka</a></li>
+        <li><a href="../bali/index.html" class="mm-link">Bali</a></li>
+        <li><a href="../Dubai/index.html" class="mm-link">Dubai</a></li>
+        <li><a href="../Maldives/index.html" class="mm-link">Maldives</a></li>
+        <li><a href="../nepal/index.html" class="mm-link">Nepal</a></li>
+        <li><a href="../Bhutan/index.html" class="mm-link">Bhutan</a></li>
+        <li><a href="../Philippines/index.html" class="mm-link">Philippines</a></li>
+        <li><a href="../Vietnam/index.html" class="mm-link">Vietnam</a></li>
+        <li><a href="../Cambodia/index.html" class="mm-link">Cambodia</a></li>
+        <li><a href="../Japan/index.html" class="mm-link">Japan</a></li>
+        <li><a href="../china/index.html" class="mm-link">China</a></li>
+        <li><a href="../Kenya/index.html" class="mm-link">Kenya</a></li>
+        <li><a href="../Brunei/index.html" class="mm-link">Brunei</a></li>
+        <li><a href="../HongKong&macau/index.html" class="mm-link">Hong Kong & Macau</a></li>
+        <li><a href="../Russia/index.html" class="mm-link">Russia</a></li>
+        <li><a href="../Turkey/index.html" class="mm-link">Turkey</a></li>
+        <li><a href="../Egypt/index.html" class="mm-link">Egypt</a></li>
+      </ul>
+
+      <ul class="mobile-menu-bottom-links">
+        <li><a href="../Contact/index.html" class="mm-link">Contact Us</a></li>
+        <li><a href="../index.html#booking" class="mm-link">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- =
+<!══════════════════════════════════ HERO ══ -->
+<section class="hero" aria-label="About Aruvi Tours hero">
+  <div class="hero__bg" role="img" aria-label="Majestic mountain landscape at dawn"></div>
+  <div class="hero__overlay"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span>Based in Salem &nbsp;·&nbsp; Global Travel Experts</span>
+      </div>
+      <h1 class="hero__title">
+        Crafting Journeys<br /><em>That Inspire</em>
+      </h1>
+      <p class="hero__sub">
+        Where every itinerary is a work of art — and every traveller, a welcomed guest of the world. Aruvi Tours transforms destinations into memories that endure a lifetime.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ WHO WE ARE ══ -->
+<section class="who" aria-labelledby="who-heading">
+  <div class="container">
+    <div class="who__inner">
+
+      <div class="who__left reveal">
+        <p class="label who__eyebrow">Who We Are</p>
+        <span class="gold-line"></span>
+        <h2 class="who__heading" id="who-heading">
+          More than a travel agency —<br /><strong>a promise to the world.</strong>
+        </h2>
+        <div class="who__stat">
+          <div>
+            <span class="stat__num">1000+</span>
+            <span class="stat__label">Happy Travellers</span>
+          </div>
+          <div>
+            <span class="stat__num">50+</span>
+            <span class="stat__label">Destinations</span>
+          </div>
+          <div>
+            <span class="stat__num">8+</span>
+            <span class="stat__label">Years of Trust</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="who__right reveal" style="transition-delay:0.15s">
+        <p>
+          Aruvi Tours is a Salem-based premium travel company dedicated to the art of purposeful exploration. Our name — drawn from the Tamil word for waterfall — reflects our belief that travel, like water, should flow naturally, beautifully, and without boundaries.
+        </p>
+        <p>
+          We curate experiences across India's most iconic landscapes and the world's most coveted destinations — from the serene backwaters of Kerala to the ancient souks of Morocco, and the sun-kissed coastlines of Europe. Every journey we design carries the hallmark of refined taste and attentive care.
+        </p>
+        <p>
+          We don't simply sell trips. We listen, understand, and craft each itinerary around the traveller — their pace, their passions, their stories waiting to be written.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ OUR STORY ══ -->
+<section class="story" aria-labelledby="story-heading">
+  <div class="container">
+    <div class="story__inner">
+
+      <div class="story__img-wrap reveal">
+        <img
+          class="story__img"
+          src="1.png"
+          alt="A traveller gazing at a golden horizon — the spirit of Aruvi Tours"
+          loading="lazy"
+        />
+        <div class="story__img-accent" aria-hidden="true"></div>
+        <div class="story__img-tag">
+          <span>2016</span>
+          <small>Est. Salem, Tamil Nadu</small>
+        </div>
+      </div>
+
+      <div class="story__text reveal" style="transition-delay:0.2s">
+        <p class="label story__eyebrow">Our Story</p>
+        <span class="gold-line"></span>
+        <h2 class="story__heading" id="story-heading">
+          Born from a passion for<br /><em>discovery and wonder.</em>
+        </h2>
+        <p>
+          Aruvi Tours began with a single conviction — that travel should be accessible without sacrificing elegance. Founded in Salem with a small team and an immense heart, we started by offering curated group tours to South India's most beloved spiritual and natural destinations.
+        </p>
+        <p>
+          Word spread quietly at first — through the gratitude of families who returned home with stories, and honeymooners who found their perfect escape. Each journey refined our craft. Each traveller taught us something new about the world and about hospitality.
+        </p>
+        <p>
+          Today, Aruvi Tours stands as a trusted name across Tamil Nadu and beyond — GST registered, MSME certified, and proudly affiliated with the Salem Tour Operators Association. Our growth has always been measured not in numbers, but in the smiles we've carried home.
+        </p>
+        <div class="story__quote">
+          <p>"We didn't set out to build a company. We set out to change how people experience the world."</p>
+          <cite>— Founder, Aruvi Tours</cite>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ SERVICES ══ -->
+<section class="services" aria-labelledby="services-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <p class="label">What We Offer</p>
+      <span class="gold-line"></span>
+      <h2 id="services-heading">Our <strong>Services</strong></h2>
+      <p>Tailored for every kind of explorer — from the first-time traveller to the seasoned wanderer.</p>
+    </header>
+
+    <div class="services__grid">
+
+      <article class="service-card reveal" style="transition-delay:0.1s">
+        <span class="service-card__num">01</span>
+        <div class="service-card__icon" aria-hidden="true">✈️</div>
+        <h3 class="service-card__title">All-Inclusive Travel Packages</h3>
+        <p class="service-card__desc">
+          From flights and accommodation to dining and sightseeing — every detail is thoughtfully arranged so you can simply arrive and experience. Our all-inclusive packages remove the complexity, leaving only the joy.
+        </p>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:0.2s">
+        <span class="service-card__num">02</span>
+        <div class="service-card__icon" aria-hidden="true">🌍</div>
+        <h3 class="service-card__title">Escorted Group Tours</h3>
+        <p class="service-card__desc">
+          Travel alongside like-minded explorers, led by our experienced tour managers. Our curated group tours blend camaraderie with culture — creating friendships as lasting as the destinations themselves.
+        </p>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:0.3s">
+        <span class="service-card__num">03</span>
+        <div class="service-card__icon" aria-hidden="true">🗺️</div>
+        <h3 class="service-card__title">Customized Private Trips</h3>
+        <p class="service-card__desc">
+          Your journey, on your terms. We design bespoke itineraries for individuals, couples, and families — shaped around your interests, timeline, and travel style. No templates. Only craftsmanship.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ WHY CHOOSE US ══ -->
+<section class="why" aria-labelledby="why-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <p class="label">Why Aruvi</p>
+      <span class="gold-line"></span>
+      <h2 id="why-heading">The <strong>Aruvi Difference</strong></h2>
+      <p>Four pillars that define every journey we craft.</p>
+    </header>
+
+    <div class="why__grid">
+
+      <div class="why-card reveal" style="transition-delay:0.1s">
+        <div class="why-card__icon-wrap" aria-hidden="true">🧭</div>
+        <div>
+          <h3 class="why-card__title">Expert Knowledge</h3>
+          <p class="why-card__desc">Our travel specialists have walked the paths, navigated the borders, and discovered the hidden gems — so your experience is built on real, lived expertise.</p>
+        </div>
+      </div>
+
+      <div class="why-card reveal" style="transition-delay:0.2s">
+        <div class="why-card__icon-wrap" aria-hidden="true">🤝</div>
+        <div>
+          <h3 class="why-card__title">Personalized Service</h3>
+          <p class="why-card__desc">We invest time in understanding who you are as a traveller — before we plan a single hotel or route. Every recommendation is personal, not templated.</p>
+        </div>
+      </div>
+
+      <div class="why-card reveal" style="transition-delay:0.3s">
+        <div class="why-card__icon-wrap" aria-hidden="true">🏅</div>
+        <div>
+          <h3 class="why-card__title">Trusted &amp; Certified</h3>
+          <p class="why-card__desc">GST registered, MSME certified, and affiliated with the Salem Tour Operators Association — our credentials reflect our commitment to transparency and professionalism.</p>
+        </div>
+      </div>
+
+      <div class="why-card reveal" style="transition-delay:0.4s">
+        <div class="why-card__icon-wrap" aria-hidden="true">💎</div>
+        <div>
+          <h3 class="why-card__title">Affordable Luxury</h3>
+          <p class="why-card__desc">Premium experiences need not carry prohibitive prices. Aruvi Tours is built on the belief that beautifully curated travel should be within reach — without compromise on quality.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ MISSION & VISION ══ -->
+<section class="mv" aria-labelledby="mv-heading">
+  <div class="container">
+    <header class="section-header reveal" style="margin-bottom:3.5rem">
+      <p class="label">Our Purpose</p>
+      <span class="gold-line"></span>
+      <h2 id="mv-heading">Mission <strong>&amp; Vision</strong></h2>
+    </header>
+
+    <div class="mv__grid">
+
+      <div class="mv__card reveal">
+        <span class="mv__type">Our Mission</span>
+        <h3 class="mv__heading">Creating <strong>meaningful travel</strong> experiences</h3>
+        <p class="mv__body">
+          To design and deliver travel experiences that go beyond sightseeing — journeys that awaken curiosity, foster human connection, and leave travellers changed in the most beautiful ways. We commit to the highest standards of care, honesty, and craft in every trip we touch.
+        </p>
+      </div>
+
+      <div class="mv__divider" aria-hidden="true">
+        <div class="mv__divider-line"></div>
+        <div class="mv__divider-icon">✦</div>
+        <div class="mv__divider-line"></div>
+      </div>
+
+      <div class="mv__card reveal" style="transition-delay:0.2s">
+        <span class="mv__type">Our Vision</span>
+        <h3 class="mv__heading">Becoming a <strong>trusted global</strong> travel brand</h3>
+        <p class="mv__body">
+          To become South India's most admired travel company — recognised not just for the destinations we cover, but for the depth of experience we bring to every journey. We envision Aruvi Tours as a brand synonymous with trust, refinement, and the enduring joy of exploration.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ TRUST & CERTIFICATIONS ══ -->
+<section class="trust" aria-labelledby="trust-heading">
+  <div class="container">
+    <div class="trust__inner">
+
+      <div class="trust__text reveal">
+        <p class="label" style="color:var(--gold-light)">Credentials</p>
+        <span class="gold-line"></span>
+        <h2 class="trust__heading" id="trust-heading">
+          Travel with<br /><strong>Confidence &amp; Trust.</strong>
+        </h2>
+        <p class="trust__desc">
+          Our certifications are not just paperwork — they are our promise to every traveller. A commitment to ethical practice, professional standards, and genuine accountability at every step of your journey.
+        </p>
+      </div>
+
+      <div class="trust__badges reveal" style="transition-delay:0.2s">
+
+        <div class="trust-badge">
+          <div class="trust-badge__icon">🏛️</div>
+          <div>
+            <p class="trust-badge__name">GST Registered</p>
+            <p class="trust-badge__detail">Government of India · Tax Compliant</p>
+          </div>
+        </div>
+
+        <div class="trust-badge">
+          <div class="trust-badge__icon">🎖️</div>
+          <div>
+            <p class="trust-badge__name">MSME Certified</p>
+            <p class="trust-badge__detail">Ministry of MSME · Officially Recognised</p>
+          </div>
+        </div>
+
+        <div class="trust-badge">
+          <div class="trust-badge__icon">🤝</div>
+          <div>
+            <p class="trust-badge__name">Salem Tour Operators Assn.</p>
+            <p class="trust-badge__detail">Active Member · Industry Partner</p>
+          </div>
+        </div>
+
+        <div class="trust-badge">
+          <div class="trust-badge__icon">🌟</div>
+          <div>
+            <p class="trust-badge__name">1000+ Happy Travellers</p>
+            <p class="trust-badge__detail">And growing — one journey at a time</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ CTA ══ -->
+<section class="cta" aria-label="Call to action — start your journey">
+  <div class="cta__bg" role="img" aria-label="Travellers exploring a golden destination"></div>
+  <div class="cta__overlay"></div>
+
+  <div class="container">
+    <div class="cta__content reveal">
+      <p class="label cta__label">Begin Here</p>
+      <h2 class="cta__heading">Ready to Explore<br />the World?</h2>
+      <p class="cta__sub">
+        Let Aruvi Tours craft your perfect escape — whether it's the mountains of Himachal, the temples of Rajasthan, or the beaches of Southeast Asia.
+      </p>
+      <a href="tel:+919999999999" class="btn-gold" aria-label="Contact Aruvi Tours to start planning your journey">
+        Start Your Journey
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ FOOTER BAR ══ -->
+<footer class="footer-bar">
+  <p>© 2025 <span>Aruvi Tours</span> · Salem, Tamil Nadu · All Rights Reserved</p>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
